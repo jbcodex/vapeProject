@@ -20,8 +20,9 @@ export default new VueRouter({
   routes:[
     {path:'/contato', component: Contatos},
     {path:'/sobre', component: Sobre},
-  
-    {path:'/categoria/vaporizadores/vaporesso', component: Vaporesso},
+    // para passa um parametro para a rota deve-se apos o ultimo barra de separação, adicionar : e o nome do parametro, normalmente um "id" e deve-se....
+    // adicionar uma nova propriedade chamada "props: true", para que o vue reconheça que akele ultimo barra + : é um parametro dinamico
+    {path:'/categoria/vaporizadores/:id', component: Vaporesso, props: true},
     
     {path:'/produtos', component: Produtos},
     {path:'/produto', component: Produto},

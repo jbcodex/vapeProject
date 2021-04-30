@@ -10,42 +10,35 @@
           height="80"
         />
       </v-col>
-    
     </v-row>
   </v-container>
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import BarMenu from '@/components/template/BarMenu.vue'
-  export default { 
-    name: 'Index',
-    components:{
-     BarMenu
-    },
-    data() {
-        return {
-        
-          }
-   },
-   computed:mapState(['navCategory']),
-  
-
-   
-  }
+import { mapState } from "vuex";
+import BarMenu from "@/components/template/BarMenu.vue";
+export default {
+  name: "Index",
+  components: {
+    BarMenu,
+  },
+  data() {
+    return {};
+  },
+  computed: mapState(["navCategory"]),
+};
 </script>
 <style scoped>
-#container{
-
-  height:100%;
+#container {
+  height: 100%;
   background-size: cover;
 }
 .bg {
-  background-color:#FFF3;
+  background-color: #fff3;
 }
-p{
+p {
   font-family: "Lato", sans-serif;
-  color:#fff;
+  color: #fff;
   margin-left: 20px;
   text-transform: uppercase;
 }
